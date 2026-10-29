@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  HelloWorld
 //
-//  Created by Ana Camila Lopez Rojano on 09/10/26.
+//  Created by Alumnos on 16/10/26.
 //
 
 import UIKit
