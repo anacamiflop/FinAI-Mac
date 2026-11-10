@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--<-->
+        <!--Register View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="RegisterViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="RegisterViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,67 +16,67 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registro" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYj-1p-mBG">
-                                <rect key="frame" x="141" y="70" width="111" height="37"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="31"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Usuario" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="dkV-xv-7gt">
-                                <rect key="frame" x="47" y="178" width="299" height="34"/>
-                                <color key="textColor" systemColor="systemGrayColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Nombre(s)" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="fgl-hz-VEn">
-                                <rect key="frame" x="47" y="252" width="299" height="34"/>
-                                <color key="textColor" systemColor="systemGrayColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Apellido(s)" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="f6O-IH-3j4">
-                                <rect key="frame" x="47" y="321" width="299" height="34"/>
-                                <color key="textColor" systemColor="systemGrayColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Contraseña" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="q30-gH-j2k">
-                                <rect key="frame" x="47" y="391" width="299" height="34"/>
-                                <color key="textColor" systemColor="systemGrayColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ft1-E0-GIR">
                                 <rect key="frame" x="60" y="749.66666666666663" width="273" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Registrarme"/>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Confirmar contraseña" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="uf1-8G-aQH">
-                                <rect key="frame" x="47" y="464" width="299" height="34"/>
-                                <color key="textColor" systemColor="systemGrayColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registro" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYj-1p-mBG">
+                                <rect key="frame" x="141.33333333333334" y="143" width="110.33333333333334" height="37"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="XiI-Rd-xSt">
+                                <rect key="frame" x="20" y="230" width="353" height="318"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Usuario" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="dkV-xv-7gt">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="34"/>
+                                        <color key="textColor" systemColor="systemGrayColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Nombre(s)" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="fgl-hz-VEn">
+                                        <rect key="frame" x="0.0" y="71" width="353" height="34"/>
+                                        <color key="textColor" systemColor="systemGrayColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Apellido(s)" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="f6O-IH-3j4">
+                                        <rect key="frame" x="0.0" y="142" width="353" height="34"/>
+                                        <color key="textColor" systemColor="systemGrayColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Contraseña" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="q30-gH-j2k">
+                                        <rect key="frame" x="0.0" y="213" width="353" height="34"/>
+                                        <color key="textColor" systemColor="systemGrayColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Confirmar contraseña" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="uf1-8G-aQH">
+                                        <rect key="frame" x="0.0" y="284" width="353" height="34"/>
+                                        <color key="textColor" systemColor="systemGrayColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="uf1-8G-aQH" firstAttribute="top" secondItem="q30-gH-j2k" secondAttribute="bottom" constant="39" id="0XG-IP-UVi"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="XiI-Rd-xSt" secondAttribute="trailing" constant="20" id="03m-u1-uOo"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="ft1-E0-GIR" secondAttribute="bottom" id="2Ur-dF-YNK"/>
-                            <constraint firstItem="JYj-1p-mBG" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="2WV-ZE-XJY"/>
-                            <constraint firstItem="fgl-hz-VEn" firstAttribute="top" secondItem="dkV-xv-7gt" secondAttribute="bottom" constant="35" id="CGZ-xq-fsB"/>
-                            <constraint firstItem="f6O-IH-3j4" firstAttribute="top" secondItem="fgl-hz-VEn" secondAttribute="bottom" constant="35" id="FXA-QC-0Tf"/>
-                            <constraint firstItem="JYj-1p-mBG" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="20" id="Gg4-S8-k4g"/>
-                            <constraint firstItem="dkV-xv-7gt" firstAttribute="top" secondItem="JYj-1p-mBG" secondAttribute="bottom" constant="71" id="N3L-1h-lWR"/>
-                            <constraint firstItem="q30-gH-j2k" firstAttribute="top" secondItem="f6O-IH-3j4" secondAttribute="bottom" constant="36" id="Oo3-LC-0vx"/>
+                            <constraint firstItem="JYj-1p-mBG" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="25" id="7WD-yf-w6R"/>
+                            <constraint firstItem="JYj-1p-mBG" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="FpT-hO-ePW"/>
                             <constraint firstItem="ft1-E0-GIR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="60" id="QWK-gx-XQA"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ft1-E0-GIR" secondAttribute="trailing" constant="60" id="YIX-2c-OZ6"/>
-                            <constraint firstItem="JYj-1p-mBG" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="70" id="jG7-HE-fm9"/>
+                            <constraint firstItem="XiI-Rd-xSt" firstAttribute="top" secondItem="JYj-1p-mBG" secondAttribute="bottom" constant="50" id="e8d-II-Msi"/>
+                            <constraint firstItem="XiI-Rd-xSt" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="tUE-J3-63W"/>
                             <constraint firstItem="ft1-E0-GIR" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="vNb-TI-Rly"/>
-                            <constraint firstItem="fgl-hz-VEn" firstAttribute="top" secondItem="dkV-xv-7gt" secondAttribute="bottom" constant="40" id="vwF-Nq-lZE"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="&lt;" id="xFG-se-f47"/>
                     <connections>
                         <outlet property="confirmpasswordTextField" destination="uf1-8G-aQH" id="Gd7-wK-b8h"/>
                         <outlet property="lastnameTextField" destination="f6O-IH-3j4" id="kd9-Di-tRS"/>
