@@ -9,4 +9,6 @@ struct User{
     var name: String = ""
     var username: String = ""
     var password: String = ""
+    var lastname: String = ""
+    var confirmpassword: String = ""
 }

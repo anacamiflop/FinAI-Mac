@@ -14,6 +14,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var RegisterButton: UIButton!
     
     //MARK: - Propiedades privadas
     //Contenedor de los published
@@ -36,6 +37,7 @@ class MainViewController: UIViewController {
         
         // Ocultar el teclado picando cualquier parte de la pantalla
         let tapGesture = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
+        
         tapGesture.cancelsTouchesInView = false
         view.addGestureRecognizer(tapGesture)
         
@@ -44,33 +46,50 @@ class MainViewController: UIViewController {
         passwordTextField.delegate = self
     }
     
+    //Botón Login
+
     @IBAction func loginTapped() {
+        print("loginTapped, nav:", navigationController as Any)
+
         guard let nv = navigationController // Asegura que una variable NULL (nll) NO SEA NULL
         else {
             return
         }
+        
+    
         // Sigue porque navigationController NO ES NULL
         
-        let storyBoard = "Home"
-        let id = "HomeViewController"
-        
-        let homeViewController = UIStoryboard(
-            name : storyBoard,
+        let name = viewModel.user.username
+            let homeViewController = UIStoryboard(name: "Home", bundle: nil)
+                .instantiateViewController(identifier: "HomeViewController") { coder in
+                    HomeViewController(coder: coder, name: name)
+                }
+            nv.pushViewController(homeViewController, animated: true)
+        }
+       
+    
+    @IBAction func RegisterTapped() {
+
+        guard let nv = navigationController else {
+            return
+        }
+
+        let storyBoard = "Register"
+        let id = "RegisterViewController"
+
+        let registerViewController = UIStoryboard(
+            name: storyBoard,
             bundle: nil
         ).instantiateViewController(
-            identifier: id
-        ) {coder in
-            let name = "P. Diddy"
-            let viewController = HomeViewController(coder: coder)
-            return viewController
-            
-            // return HomeViewController (coder: coder, name: name)
+            withIdentifier: id
+        )
 
-        }
-        nv.pushViewController(homeViewController, animated: true)
+        nv.pushViewController(registerViewController, animated: true)
     }
     
 }
+
+
 
 // Separa el delegado que ocupa el TextField
 extension MainViewController: UITextFieldDelegate {

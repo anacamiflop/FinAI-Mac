@@ -8,7 +8,9 @@
 import UIKit
 
 class HomeViewController: UITabBarController {
-    /*
+    
+    
+    
     @IBOutlet weak var lblName: UILabel!
     
     private let name: String
@@ -25,10 +27,16 @@ class HomeViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        lblName.text = name
+        lblName?.text = name
+        
+        // OCULTAR LA NAVEGACION DEL MAIN VIEW CONTROLLER
+        navigationItem.setHidesBackButton(true, animated: false)
+        
+        //
+        navigationController?.interactivePopGestureRecognizer?.isEnabled = false
      
         }
-     */
+     
     
     // TODO: - Separarlo por funciones
     override func viewDidAppear(_ animated: Bool) {
