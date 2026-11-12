@@ -71,7 +71,6 @@ class RegisterViewController: UIViewController {
 
         // OJO: con esta línea nadie puede escribir en el usuario y el botón
         // nunca se habilita. Quítala si el usuario se escribe a mano.
-        usernameField.isUserInteractionEnabled = false
     }
 
     // Conecta un @Published de error con su label

@@ -20,6 +20,9 @@
                                 <rect key="frame" x="60" y="749.66666666666663" width="273" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Registrarme"/>
+                                <connections>
+                                    <action selector="registerTapped" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Aip-Uw-57i"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registro" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYj-1p-mBG">
                                 <rect key="frame" x="141.33333333333334" y="143" width="110.33333333333334" height="37"/>
@@ -33,7 +36,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="Z5b-QL-d49">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="85.333333333333329"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Usuario" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="dkV-xv-7gt">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="apK-Ez-Yk3">
                                                 <rect key="frame" x="0.0" y="0.0" width="353" height="34"/>
                                                 <color key="textColor" systemColor="systemGrayColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -50,7 +53,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="sI0-OR-QG4">
                                         <rect key="frame" x="0.0" y="122.3333333333333" width="353" height="62.333333333333329"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Nombre(s)" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="fgl-hz-VEn">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre(s)" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="fgl-hz-VEn">
                                                 <rect key="frame" x="0.0" y="0.0" width="353" height="25.333333333333332"/>
                                                 <color key="textColor" systemColor="systemGrayColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -68,7 +71,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="SSB-3V-htc">
                                         <rect key="frame" x="0.0" y="221.66666666666669" width="353" height="37"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Apellido(s)" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="f6O-IH-3j4">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Apellido(s)" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="f6O-IH-3j4">
                                                 <rect key="frame" x="0.0" y="0.0" width="353" height="0.0"/>
                                                 <color key="textColor" systemColor="systemGrayColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -86,7 +89,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="YbW-Sh-HZ1">
                                         <rect key="frame" x="0.0" y="295.66666666666663" width="353" height="37"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Contraseña" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="q30-gH-j2k">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="q30-gH-j2k">
                                                 <rect key="frame" x="0.0" y="0.0" width="353" height="0.0"/>
                                                 <color key="textColor" systemColor="systemGrayColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -104,7 +107,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="z9b-Jc-gui">
                                         <rect key="frame" x="0.0" y="369.66666666666663" width="353" height="0.0"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Confirmar contraseña" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="uf1-8G-aQH">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirmar contraseña" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="uf1-8G-aQH">
                                                 <rect key="frame" x="0.0" y="0.0" width="353" height="0.0"/>
                                                 <color key="textColor" systemColor="systemGrayColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -137,6 +140,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="RegisterButton" destination="ft1-E0-GIR" id="Irq-GJ-T9j"/>
                         <outlet property="confirmpasswordErrorLabel" destination="Hsw-MY-aRV" id="bN3-Ed-l4K"/>
                         <outlet property="confirmpasswordTextField" destination="uf1-8G-aQH" id="Gd7-wK-b8h"/>
                         <outlet property="lastnameErrorLabel" destination="swJ-1D-vji" id="cbc-Bb-P5Q"/>
@@ -145,9 +149,8 @@
                         <outlet property="nameTextField" destination="fgl-hz-VEn" id="att-jN-1gM"/>
                         <outlet property="passwordErrorLabel" destination="rJp-By-PhA" id="euI-8x-MEk"/>
                         <outlet property="passwordTextField" destination="q30-gH-j2k" id="tdk-uY-LSY"/>
-                        <outlet property="registerButton" destination="ft1-E0-GIR" id="clV-aI-cbj"/>
                         <outlet property="usernameErrorLabel" destination="KCL-Eo-JvY" id="dFI-HJ-8Ef"/>
-                        <outlet property="usernameField" destination="dkV-xv-7gt" id="Fkt-50-vm8"/>
+                        <outlet property="usernameField" destination="apK-Ez-Yk3" id="HKG-vd-iMc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
