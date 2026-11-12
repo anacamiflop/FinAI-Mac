@@ -137,11 +137,16 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="confirmpasswordErrorLabel" destination="Hsw-MY-aRV" id="bN3-Ed-l4K"/>
                         <outlet property="confirmpasswordTextField" destination="uf1-8G-aQH" id="Gd7-wK-b8h"/>
+                        <outlet property="lastnameErrorLabel" destination="swJ-1D-vji" id="cbc-Bb-P5Q"/>
                         <outlet property="lastnameTextField" destination="f6O-IH-3j4" id="kd9-Di-tRS"/>
+                        <outlet property="nameErrorLabel" destination="hlK-Zu-t0j" id="a3Q-6O-99b"/>
                         <outlet property="nameTextField" destination="fgl-hz-VEn" id="att-jN-1gM"/>
+                        <outlet property="passwordErrorLabel" destination="rJp-By-PhA" id="euI-8x-MEk"/>
                         <outlet property="passwordTextField" destination="q30-gH-j2k" id="tdk-uY-LSY"/>
                         <outlet property="registerButton" destination="ft1-E0-GIR" id="clV-aI-cbj"/>
+                        <outlet property="usernameErrorLabel" destination="KCL-Eo-JvY" id="dFI-HJ-8Ef"/>
                         <outlet property="usernameField" destination="dkV-xv-7gt" id="Fkt-50-vm8"/>
                     </connections>
                 </viewController>
