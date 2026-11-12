@@ -8,6 +8,7 @@
 // Un objeto de un CLASS es muy diferente al de un STRUCT ppor el uso de memoria
 
 import Combine
+import Foundation
 
 class MainViewModel {
     
@@ -31,5 +32,16 @@ class MainViewModel {
     func validateForm() {
         print("User: \(user)")
         isValidForm = !(user.username.isEmpty || user.password.isEmpty)
+    }
+    
+    // Compara lo escrito con lo que se guardó al registrar
+    func validateLogin() -> Bool {
+        let defaults = UserDefaults.standard
+        let savedUser = defaults.string(forKey: "userName") ?? ""
+        let savedPassword = defaults.string(forKey: "password") ?? ""
+        
+        return !savedUser.isEmpty
+        && user.username == savedUser
+        && user.password == savedPassword
     }
 }

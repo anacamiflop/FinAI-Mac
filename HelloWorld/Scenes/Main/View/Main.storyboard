@@ -61,6 +61,13 @@
                                     <action selector="RegisterTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="n28-dJ-iaW"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BIENVENIDO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PhE-Pw-a0p">
+                                <rect key="frame" x="170.66666666666666" y="178" width="98.999999999999972" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -88,6 +95,7 @@
                     <navigationItem key="navigationItem" id="yUQ-A5-iNf"/>
                     <connections>
                         <outlet property="RegisterButton" destination="b8G-uR-lpm" id="m8j-am-hkK"/>
+                        <outlet property="lblWelcome" destination="PhE-Pw-a0p" id="XKh-gx-qmr"/>
                         <outlet property="loginButton" destination="Xcc-B3-twh" id="d81-FC-X3n"/>
                         <outlet property="passwordTextField" destination="20S-eP-fyb" id="q5T-ab-dGW"/>
                         <outlet property="userTextField" destination="3lt-YE-1Et" id="RYg-pv-4sv"/>

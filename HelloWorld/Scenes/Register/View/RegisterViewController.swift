@@ -63,18 +63,24 @@ class RegisterViewController: UIViewController {
         passwordTextField.delegate = self
         confirmpasswordTextField.delegate = self
         
-        // ELIMINAR ITERACCION CON USUARIO
-        usernameField.isUserInteractionEnabled = false
     }
     
     @IBAction func registerTapped() {
-        guard let nv = navigationController // Asegura que una variable NULL (nll) NO SEA NULL
-        else {
-            return
-        }
-        // Sigue porque navigationController NO ES NULL
-        
-        nv.popViewController(animated: true)
+        guard let nv = navigationController else { return }
+
+        // Guarda los datos en UserDefaults (vía ViewModel)
+        viewModel.saveUser()
+
+        let alert = UIAlertController(
+            title: "Registro exitoso",
+            message: "Tu cuenta fue creada correctamente",
+            preferredStyle: .alert
+        )
+        alert.addAction(UIAlertAction(title: "OK", style: .default) { _ in
+            // Regresa al MainViewController
+            nv.popViewController(animated: true)
+        })
+        present(alert, animated: true)
     }
     
 }

@@ -8,11 +8,13 @@
 //
 
 import Combine
+import Foundation
 
 class RegisterViewModel {
     
     // Modelo
     var model = RegisterModel()
+
     
     // PUBLISHED: Un contenedor de propiedad que se utiliza dentro de unas clase, pero la clase tiene que ser observable
     // para NOTIFICAR AUTMATICAMENTE a la interfaz de usuario (View) cuando cambia el valor de una propiedad
@@ -27,10 +29,28 @@ class RegisterViewModel {
         set { model.user = newValue }
     }
     
+    var name: String = ""
+    var password: String = ""
+    var userName: String = ""
+
+    func saveUser() {
+        // Copia lo que escribió el usuario a las variables
+        name = user.name
+        password = user.password
+        userName = user.username
+
+        // Guarda en UserDefaults
+        let defaults = UserDefaults.standard
+        defaults.set(name, forKey: "name")
+        defaults.set(password, forKey: "password")
+        defaults.set(userName, forKey: "userName")
+    }
+    
     // Función para validar el form
     func validateForm() {
         print("User: \(user)")
         isValidForm = !(user.username.isEmpty || user.name.isEmpty || user.lastname.isEmpty || user.password.isEmpty || user.confirmpassword.isEmpty)
+        && user.password == user.confirmpassword
     }
 }
     
